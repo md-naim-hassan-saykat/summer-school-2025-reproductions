@@ -29,7 +29,6 @@ The goal is to consolidate my learning in **bandits, reinforcement learning, and
 Dependencies are listed in `requirements.txt`. To install:
 ```bash
 pip install -r requirements.txt
-```markdown
 ## How to Run
 After installing dependencies, run any script:
 ```bash
