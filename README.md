@@ -29,11 +29,22 @@ The goal is to consolidate my learning in **bandits, reinforcement learning, and
   ![Q-learning result](gridworld_qlearning_rewards.png)
 
 ## Requirements
+
+First, create and activate a virtual environment:
+
 ```bash
-source .venv/bin/activate
+python3 -m venv .venv
+source .venv/bin/activate    # macOS/Linux
+# For Windows (PowerShell):
+# .venv\Scripts\Activate
+```
+
+## Then install dependencies:
+
+```bash
 pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
-```   
+```
 
 ## How to Run
 ```bash
