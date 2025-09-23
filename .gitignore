@@ -7,7 +7,5 @@ __pycache__/
 # MacOS system files
 .DS_Store
 
-# Generated plots and logs
-*.png
-*.pdf
+# Logs
 *.log
