@@ -48,8 +48,8 @@ pip install -r requirements.txt
 
 ## How to Run
 ```bash
-python bandits_epsilon_ucb_thompson.py
-python langevin_sampling_double_well.py
+python bandits_epsilon_ucb_thompson.py && \
+python langevin_sampling_double_well.py && \
 python rl_gridworld_qlearning.py
 ```
 
