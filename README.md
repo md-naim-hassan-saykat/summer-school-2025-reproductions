@@ -30,16 +30,16 @@ The goal is to consolidate my learning in **bandits, reinforcement learning, and
 
 ## Requirements
 ```bash
-python3 -m venv .venv
-source .venv/bin/activate      # macOS/Linux (zsh/bash)
+source .venv/bin/activate
+pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt
 ```   
 
 ## How to Run
 ```bash
-python3 bandits_epsilon_ucb_thompson.py
-python3 langevin_sampling_double_well.py
-python3 rl_gridworld_qlearning.py
+python bandits_epsilon_ucb_thompson.py
+python langevin_sampling_double_well.py
+python rl_gridworld_qlearning.py
 ```
 
 ## License
