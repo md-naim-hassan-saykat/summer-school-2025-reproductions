@@ -29,20 +29,19 @@ The goal is to consolidate my learning in **bandits, reinforcement learning, and
   ![Q-learning result](gridworld_qlearning_rewards.png)
 
 ## Requirements
-Dependencies are listed in `requirements.txt`. To install:
-
 ```bash
-pip3 install --upgrade -r requirements.txt
+python3 -m venv .venv
+source .venv/bin/activate      # macOS/Linux (zsh/bash)
+pip install -r requirements.txt
 ```   
 
 ## How to Run
-After installing dependencies, run any script:
-
 ```bash
 python3 bandits_epsilon_ucb_thompson.py
 python3 langevin_sampling_double_well.py
 python3 rl_gridworld_qlearning.py
 ```
+
 ## License
 This project is licensed under the terms of the MIT license (see LICENSE).
 
