@@ -1,5 +1,2 @@
-# Numpy range that satisfies opencv-python (>=2.0 and <2.3)
-numpy>=2.0,<2.3
-
-# Any 3.7.x works well with Python 3.9 and your plots
-matplotlib>=3.7,<4.0
+numpy==1.26.4
+matplotlib==3.7.2
