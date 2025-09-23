@@ -1,5 +1,8 @@
 # Summer School 2025 — Minimal Reproductions
 
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/downloads/release/python-390/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 This repository contains small, self-contained Python scripts I reproduced after attending the **Hi! Paris Summer School 2025**.  
 The goal is to consolidate my learning in **bandits, reinforcement learning, and Langevin dynamics** through hands-on coding exercises.
 
