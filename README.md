@@ -27,11 +27,6 @@ The goal is to consolidate my learning in **bandits, reinforcement learning, and
 
 ## Requirements
 Dependencies are listed in `requirements.txt`. To install:
+
 ```bash
 pip install -r requirements.txt
-## How to Run
-After installing dependencies, run any script:
-```bash
-python bandits_epsilon_ucb_thompson.py
-python langevin_sampling_double_well.py
-python rl_gridworld_qlearning.py
