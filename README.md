@@ -25,9 +25,14 @@ The goal is to consolidate my learning in **bandits, reinforcement learning, and
   Plots episode reward and running average.  
   ![Q-learning result](gridworld_qlearning_rewards.png)
 
-## How to Run
+## Requirements
+Dependencies are listed in `requirements.txt`. To install:
 ```bash
-pip install numpy matplotlib
+pip install -r requirements.txt
+```markdown
+## How to Run
+After installing dependencies, run any script:
+```bash
 python bandits_epsilon_ucb_thompson.py
 python langevin_sampling_double_well.py
 python rl_gridworld_qlearning.py
