@@ -32,16 +32,16 @@ The goal is to consolidate my learning in **bandits, reinforcement learning, and
 Dependencies are listed in `requirements.txt`. To install:
 
 ```bash
-pip install -r requirements.txt
+pip3 install --upgrade -r requirements.txt
 ```   
 
 ## How to Run
 After installing dependencies, run any script:
 
 ```bash
-python bandits_epsilon_ucb_thompson.py
-python langevin_sampling_double_well.py
-python rl_gridworld_qlearning.py
+python3 bandits_epsilon_ucb_thompson.py
+python3 langevin_sampling_double_well.py
+python3 rl_gridworld_qlearning.py
 ```
 ## License
 This project is licensed under the terms of the MIT license (see LICENSE).
