@@ -11,8 +11,8 @@ The goal is to consolidate my learning in **bandits, reinforcement learning, and
 ## Contents
 
 - **Multi-Armed Bandits**  
-  [Script](bandits_epsilon_ucb_thompson.py) | 
-  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/md-naim-hassan-saykat/summer-school-2025-reproductions/blob/main/bandits_epsilon_ucb_thompson.ipynb)  
+  [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+  https://colab.research.google.com/github/md-naim-hassan-saykat/summer-school-2025-reproductions/blob/main/bandits_epsilon_ucb_thompson.ipynb)  
   Implements and compares:
   - ε-greedy
   - UCB1
@@ -20,14 +20,14 @@ The goal is to consolidate my learning in **bandits, reinforcement learning, and
   Produces a plot of **cumulative regret** across time steps.
 
 - **Langevin Dynamics**  
-  [Script](langevin_sampling_double_well.py) | 
-  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/md-naim-hassan-saykat/summer-school-2025-reproductions/blob/main/langevin_sampling_double_well.ipynb)  
+  [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+  https://colab.research.google.com/github/md-naim-hassan-saykat/summer-school-2025-reproductions/blob/main/langevin_sampling_double_well.ipynb)  
   Uses overdamped Langevin sampling in a 1D double-well potential.  
   Produces a histogram compared against the theoretical density.
 
 - **Reinforcement Learning (Q-learning)**  
-  [Script](rl_gridworld_qlearning.py) | 
-  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/md-naim-hassan-saykat/summer-school-2025-reproductions/blob/main/rl_gridworld_qlearning.ipynb)  
+  [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](
+  https://colab.research.google.com/github/md-naim-hassan-saykat/summer-school-2025-reproductions/blob/main/rl_gridworld_qlearning.ipynb)  
   Q-learning on a 5×5 gridworld with simple rewards.  
   Produces a plot of episode reward with running average.
 
