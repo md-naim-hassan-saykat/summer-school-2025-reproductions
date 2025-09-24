@@ -9,18 +9,18 @@ The goal is to consolidate my learning in **bandits, reinforcement learning, and
 ---
 
 ## Contents
-- **Multi-Armed Bandits** (`bandits_epsilon_ucb_thompson.py`)  
+- **Multi-Armed Bandits** ([bandits_epsilon_ucb_thompson.py](bandits_epsilon_ucb_thompson.py))   
   Implements and compares:
   - ε-greedy
   - UCB1
   - Thompson Sampling  
   Produces a plot of **cumulative regret** across time steps.
 
-- **Langevin Dynamics** (`langevin_sampling_double_well.py`)  
+- **Langevin Dynamics** ([langevin_sampling_double_well.py](langevin_sampling_double_well.py))  
   Uses overdamped Langevin sampling in a 1D double-well potential.  
   Produces a histogram compared against the theoretical density.
 
-- **Reinforcement Learning (Q-learning)** (`rl_gridworld_qlearning.py`)  
+- **Reinforcement Learning (Q-learning)** ([rl_gridworld_qlearning.py](rl_gridworld_qlearning.py))   
   Q-learning on a 5×5 gridworld with simple rewards.  
   Produces a plot of episode reward with running average.
 
