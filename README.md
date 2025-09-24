@@ -1,8 +1,10 @@
 # Summer School 2025 — Minimal Reproductions
 
-[![Open Bandits in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/md-naim-hassan-saykat/summer-school-2025-reproductions/blob/main/bandits_epsilon_ucb_thompson.py)
-[![Open Langevin in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/md-naim-hassan-saykat/summer-school-2025-reproductions/blob/main/langevin_sampling_double_well.py)
-[![Open Q-Learning in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/md-naim-hassan-saykat/summer-school-2025-reproductions/blob/main/rl_gridworld_qlearning.py)
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/md-naim-hassan-saykat/summer-school-2025-reproductions/blob/main/bandits_epsilon_ucb_thompson.py)
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/md-naim-hassan-saykat/summer-school-2025-reproductions/blob/main/langevin_sampling_double_well.py)
+
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/md-naim-hassan-saykat/summer-school-2025-reproductions/blob/main/rl_gridworld_qlearning.py)
 
 [![Python](https://img.shields.io/badge/Python-3.13-blue)](https://www.python.org/downloads/release/python-3130/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
