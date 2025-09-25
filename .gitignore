@@ -9,3 +9,26 @@ __pycache__/
 
 # Logs
 *.log
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# LaTeX build files
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.log
+
+# VSCode or IDE settings
+.vscode/
+.idea/
