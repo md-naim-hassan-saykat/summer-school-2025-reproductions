@@ -1,0 +1,107 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hyperfootnotes=false]{hyperref}
+\usepackage{xurl}
+\usepackage{setspace}
+\setstretch{1.25}
+\raggedbottom
+\emergencystretch=2em
+
+% Section formatting
+\titlespacing*{\section}{0pt}{0.9ex plus 0.4ex minus .2ex}{0.8ex}
+\titlespacing*{\subsection}{0pt}{0.7ex plus 0.3ex minus .2ex}{0.6ex}
+
+\titleformat{\section}{\bfseries\large}{\thesection.}{0.5em}{}
+
+\title{\textbf{Report on Hi! Paris Summer School 2025}}
+\author{\textbf{Md Naim Hassan Saykat}\\
+M1 Artificial Intelligence, Université Paris-Saclay\\
+\href{mailto:md-naim-hassan.saykat@universite-paris-saclay.fr}{md-naim-hassan.saykat@universite-paris-saclay.fr}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+This report presents the main concepts, methods, and insights gained during the Hi! Paris Summer School 2025, an interdisciplinary program covering advanced topics in Artificial Intelligence and Machine Learning across finance, biology, reinforcement learning, and intelligent agents. The combination of theoretical lectures and hands-on reproductions provided both research exposure and practical development experience.
+\end{abstract}
+
+\section{AI in Financial Markets}
+I learned how Artificial Intelligence supports the core functions of the financial system, such as risk intermediation and information processing.  
+Key insights included:
+\begin{itemize}
+    \item The six fundamental roles of the financial system \cite{merton1995}.   
+    \item AI as a General Purpose Technology, requiring domain-specific innovations.  
+\end{itemize}
+
+Practical applications studied showed how AI techniques can be directly applied in finance:
+\begin{itemize}
+    \item Robo-advisors, recommendation engines, and automated price analysis.  
+    \item Offline reinforcement learning for portfolio management, deep hedging, and pricing strategies.  
+    \item The use of alternative data (e.g., satellite images, geolocation, and text) to improve forecasting.  
+\end{itemize}
+
+\section{Foundation Models in Biology}
+I explored how foundation model architectures are adapted to biological data.  
+DNA and protein models (e.g., DNABERT \cite{ji2021dnabert}, Evo2) demonstrated applications in sequence analysis, structure prediction, and generative design.  
+Histology models such as H-optimus-1 enabled digital pathology, spatial omics, and multimodal data integration.  
+This highlighted a shift from narrow, task-specific models to pre-trained cross-modal architectures suitable for fine-tuning.
+
+\section{Intelligent Agents}
+I studied the limitations of Large Language/Multimodal Models, including hallucinations, closed-world reasoning, and lack of real-time adaptability.  
+Agentic AI addresses these issues by combining model reasoning with tools, environments, and autonomous decision-making.  
+I also learned about offline reinforcement learning and imitation learning for training web agents, showing how agent architectures extend LLMs into practical, interactive systems \cite{wang2023agents}.
+
+\section{Multi-Armed Bandits}
+I developed a deeper understanding of the exploration--exploitation trade-off.  
+Algorithms such as $\epsilon$-greedy, Upper Confidence Bound (UCB), and Thompson Sampling were implemented and compared \cite{lattimore2020bandit}.  
+Reproducing these algorithms in Python helped me analyze cumulative regret and understand applications in recommendation systems, adaptive experimentation, and online advertising.
+
+\section{Hands-On Tutorials}
+Through practical coding exercises, I reproduced small experiments with:
+\begin{itemize}
+    \item Bandit algorithms and their cumulative regret behavior.  
+    \item Langevin dynamics for sampling in energy landscapes.  
+    \item Reinforcement Learning workflows such as Q-learning in a gridworld.  
+\end{itemize}
+The full implementations and plots are openly available on GitHub:  
+\url{https://github.com/md-naim-hassan-saykat/summer-school-2025-reproductions}
+
+\section{Conclusion \& Reflection}
+The summer school strengthened my theoretical foundation while giving me practical coding experience.  
+I now better understand how reinforcement learning, bandits, and Langevin dynamics are applied across domains, and how foundation models extend to biology and intelligent agents.  
+\par My reproductions and visualizations are available at:  
+\url{https://github.com/md-naim-hassan-saykat/summer-school-2025-reproductions}  
+This demonstrates how I engaged with both the theory and practice of AI during the summer school.
+
+{\small
+\begin{thebibliography}{9}
+\bibitem{merton1995}
+Merton, R. C. (1995). A functional perspective of financial intermediation. 
+\textit{Financial Management}, 24(2), 23--41. 
+\url{https://www.jstor.org/stable/3665532}
+
+\bibitem{ji2021dnabert}
+Ji, Y., Zhou, Z., Liu, H., \& Davuluri, R. V. (2021). 
+DNABERT: pre-trained bidirectional encoder representations from transformers model for DNA-language in genome. 
+\textit{Bioinformatics}, 37(15), 2112--2120. 
+\url{https://doi.org/10.1093/bioinformatics/btab083}
+
+\bibitem{wang2023agents}
+Wang, L., Ma, C., Feng, X., Zhang, Z., Yang, H., Zhang, J., Chen, Z., Tang, J., Chen, X., Lin, Y., Zhao, W. X., Wei, Z., \& Wen, J.-R. (2023). 
+A Survey on Large Language Model based Autonomous Agents. 
+arXiv preprint arXiv:2308.11432. 
+\url{https://arxiv.org/abs/2308.11432}
+
+\bibitem{lattimore2020bandit}
+Lattimore, T., \& Szepesvári, C. (2020). 
+\textit{Bandit Algorithms}. 
+Cambridge University Press. 
+\url{https://tor-lattimore.com/downloads/book/book.pdf}
+
+\end{thebibliography}
+}
+
+\end{document}
