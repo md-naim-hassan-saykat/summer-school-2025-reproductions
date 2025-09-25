@@ -94,4 +94,3 @@ This project is licensed under the terms of the MIT license (see LICENSE).
 
 ## Acknowledgment
 These reproductions were created as part of my learning during the Hi! Paris Summer School 2025.
-They complement my written report submitted for academic credit.
