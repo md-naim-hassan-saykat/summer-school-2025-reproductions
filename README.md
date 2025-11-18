@@ -87,7 +87,7 @@ If they don’t appear, simply re-run the code as described in **How to Run**.
 
 ## Related Report
 The full written report can be found here:  
-[📄 Summer School Report 2025 (PDF)](docs/Md_Naim_Hassan_Saykat_Hi_Paris_Summer_School_Report_2025.pdf)
+[Summer School Report 2025 (PDF)](docs/Md_Naim_Hassan_Saykat_Hi_Paris_Summer_School_Report_2025.pdf)
 
 ## License
 This project is licensed under the terms of the MIT license (see LICENSE).
