@@ -87,7 +87,7 @@ If they don’t appear, simply re-run the code as described in **How to Run**.
 
 ## Related Report
 The full written report accompanying this repository can be found here:  
-[Hi! Paris Summer School 2025 Report (PDF)](docs/Hi_Paris_Summer_School_Report_2025.pdf)
+[Hi! Paris Summer School 2025 Report (PDF)](docs/report.pdf)
 
 ## License
 This project is licensed under the terms of the MIT license (see LICENSE).
