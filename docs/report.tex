@@ -1,0 +1,216 @@
+\documentclass[11pt,a4paper]{article}
+
+% -------------------------------------------------
+% Packages
+% -------------------------------------------------
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hyperfootnotes=false]{hyperref}
+\usepackage{xurl}
+\usepackage{setspace}
+\usepackage{microtype}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{amsmath}
+\usepackage{booktabs}
+
+% -------------------------------------------------
+% General formatting
+% -------------------------------------------------
+\setstretch{1.18}
+\raggedbottom
+\emergencystretch=2em
+\setlength{\parskip}{0.35em}
+\setlength{\parindent}{0pt}
+
+% -------------------------------------------------
+% Hyperref setup
+% -------------------------------------------------
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    urlcolor=blue,
+    citecolor=blue,
+    filecolor=blue,
+    pdftitle={Report on Hi! Paris Summer School 2025},
+    pdfauthor={Md Naim Hassan Saykat}
+}
+
+% -------------------------------------------------
+% Section formatting
+% -------------------------------------------------
+\titleformat{\section}
+  {\bfseries\large}
+  {\thesection.}{0.5em}{}
+
+\titleformat{\subsection}
+  {\bfseries\normalsize}
+  {\thesubsection.}{0.5em}{}
+
+\titlespacing*{\section}{0pt}{1.0ex plus 0.4ex minus .2ex}{0.7ex}
+\titlespacing*{\subsection}{0pt}{0.8ex plus 0.3ex minus .2ex}{0.5ex}
+
+% -------------------------------------------------
+% Lists
+% -------------------------------------------------
+\setlist[itemize]{
+    leftmargin=1.6em,
+    itemsep=0.25em,
+    topsep=0.35em
+}
+
+% -------------------------------------------------
+% Header / Footer
+% -------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Hi! Paris Summer School 2025}
+\fancyhead[R]{Md Naim Hassan Saykat}
+\fancyfoot[C]{\thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0.3pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% -------------------------------------------------
+% Document
+% -------------------------------------------------
+\begin{document}
+
+% -------------------------------------------------
+% Title block
+% -------------------------------------------------
+\begin{center}
+    {\LARGE \textbf{Report on Hi! Paris Summer School 2025}}\\[0.8em]
+    
+    {\large Md Naim Hassan Saykat}\\[0.25em]
+\end{center}
+
+\vspace{0.3em}
+
+% -------------------------------------------------
+% Abstract
+% -------------------------------------------------
+\begin{abstract}
+This report summarizes the main concepts, methods, and practical insights gained during the Hi! Paris Summer School 2025, an interdisciplinary program covering advanced topics in Artificial Intelligence and Machine Learning across finance, biology, reinforcement learning, and intelligent agents. The combination of theoretical lectures and hands-on reproductions provided both research exposure and practical development experience, particularly in reinforcement learning, multi-armed bandits, and simulation-based experimentation.
+\end{abstract}
+
+% -------------------------------------------------
+\section{Introduction}
+The Hi! Paris Summer School 2025 offered an intensive introduction to several modern AI research directions through a combination of lectures, discussions, and practical coding sessions. The program connected theoretical foundations with real-world applications across multiple domains, including financial markets, computational biology, reinforcement learning, and agentic systems.
+
+This report presents the main ideas I learned from the summer school and highlights the practical reproductions I completed during the hands-on sessions. It is intended as a concise academic summary of both the conceptual content and the implementation experience gained throughout the program.
+
+% -------------------------------------------------
+\section{AI in Financial Markets}
+One of the major themes of the summer school was the role of Artificial Intelligence in modern financial systems. I learned how AI can support key financial functions such as information processing, forecasting, decision support, and risk intermediation. A particularly useful conceptual foundation was the functional perspective of the financial system, which emphasizes the underlying economic roles of financial institutions rather than their institutional forms \cite{merton1995}.
+
+The lectures also highlighted how AI should be understood as a \textit{General Purpose Technology}, meaning that its impact depends not only on algorithmic advances but also on domain-specific adaptation and integration into financial workflows. This perspective was useful for understanding why machine learning methods in finance require careful treatment of market structure, uncertainty, and decision-making constraints.
+
+Several concrete applications of AI in finance were discussed, including:
+\begin{itemize}
+    \item robo-advisory systems and recommendation engines for investment support;
+    \item automated price analysis and forecasting pipelines;
+    \item offline reinforcement learning for portfolio management and trading decisions;
+    \item deep hedging and data-driven pricing strategies;
+    \item the use of alternative data sources such as satellite imagery, geolocation traces, and textual information to improve predictive performance.
+\end{itemize}
+
+These examples showed how AI techniques can move beyond purely predictive tasks and contribute directly to financial decision-making under uncertainty.
+
+% -------------------------------------------------
+\section{Foundation Models in Biology}
+Another important topic was the adaptation of foundation models to biological data. I explored how Transformer-based architectures and other large-scale pre-trained models can be applied to domains such as genomics, proteomics, and computational pathology.
+
+DNA and protein language models, including DNABERT \cite{ji2021dnabert} and Evo2, illustrated how biological sequences can be treated in a language-modeling framework. These models support tasks such as sequence understanding, functional prediction, representation learning, and generative biological design. This perspective was particularly interesting because it shows how ideas originally developed for natural language processing can be transferred to scientific data modalities.
+
+In addition, histology-oriented foundation models such as H-optimus-1 demonstrated the growing role of pre-trained models in digital pathology, multimodal biological data integration, and spatial omics analysis. Overall, this part of the summer school highlighted an important shift from narrow task-specific systems toward large pre-trained cross-modal architectures that can later be fine-tuned for specialized downstream applications.
+
+% -------------------------------------------------
+\section{Intelligent Agents}
+The lectures on intelligent agents focused on the limitations of standard Large Language Models (LLMs) and Large Multimodal Models when used in isolation. Key limitations discussed included hallucinations, closed-world reasoning, weak grounding in external environments, and limited ability to adapt to dynamic real-time settings.
+
+Agentic AI addresses these limitations by extending language models with tools, memory, planning, environment interaction, and decision-making capabilities. In this setting, the model is no longer treated only as a text generator, but as part of a broader system capable of acting in an environment and iteratively improving its outputs.
+
+I also learned about the use of offline reinforcement learning and imitation learning for training web agents and interactive systems. These methods are particularly relevant when direct online exploration is expensive, unsafe, or impractical. The broader takeaway was that intelligent agents represent a practical systems-level extension of LLMs, enabling them to perform tasks that require sequential reasoning, tool use, and interaction with external interfaces \cite{wang2023agents}.
+
+% -------------------------------------------------
+\section{Multi-Armed Bandits}
+The sessions on multi-armed bandits helped me build a deeper understanding of the exploration-exploitation trade-off in sequential decision-making. I studied several classical algorithms, including $\epsilon$-greedy, Upper Confidence Bound (UCB), and Thompson Sampling, and examined how their design choices affect learning efficiency and cumulative regret \cite{lattimore2020bandit}.
+
+This topic was especially valuable because it connects simple probabilistic decision rules with practical applications in online recommendation, adaptive experimentation, A/B testing, and digital advertising. Beyond the theoretical intuition, implementing these algorithms in Python allowed me to observe their behavior empirically and compare how quickly different strategies identify high-reward actions under uncertainty.
+
+Through these experiments, I gained a more concrete understanding of:
+\begin{itemize}
+    \item how exploration strategies influence long-term reward accumulation;
+    \item why confidence-based or Bayesian methods can outperform naive heuristics;
+    \item how cumulative regret serves as a useful metric for evaluating sequential decision algorithms.
+\end{itemize}
+
+% -------------------------------------------------
+\section{Hands-On Reproductions}
+A major strength of the summer school was the integration of practical tutorials with the lecture material. Through these hands-on sessions, I reproduced several small-scale experiments and implementations in Python. These reproductions helped bridge the gap between theory and practice by turning abstract concepts into executable workflows.
+
+The main practical exercises included:
+\begin{itemize}
+    \item \textbf{Multi-armed bandit simulations}, including implementations of $\epsilon$-greedy, UCB, and Thompson Sampling, with visualization of cumulative regret over time;
+    \item \textbf{Langevin dynamics experiments} for sampling in energy landscapes and understanding stochastic optimization behavior;
+    \item \textbf{Reinforcement learning workflows}, including Q-learning in a gridworld environment.
+\end{itemize}
+
+These implementations gave me hands-on exposure to experimental design, simulation, visualization, and reproducible coding practices in machine learning. They also helped reinforce the conceptual material from the lectures by making the underlying algorithms more concrete and interpretable.
+
+The full reproductions, notebooks, and generated plots are available in the accompanying GitHub repository:
+
+\begin{center}
+\url{https://github.com/md-naim-hassan-saykat/summer-school-2025-reproductions}
+\end{center}
+
+% -------------------------------------------------
+\section{Conclusion and Reflection}
+The Hi! Paris Summer School 2025 strengthened both my theoretical understanding and my practical experience in Artificial Intelligence. Across the different sessions, I gained a broader perspective on how modern AI methods are applied in diverse domains such as financial modeling, biological sequence analysis, intelligent agent systems, and sequential decision-making.
+
+The hands-on tutorials were particularly valuable because they allowed me to translate theoretical ideas into working implementations. Reproducing bandit algorithms, Langevin dynamics, and reinforcement learning workflows gave me a clearer understanding of the assumptions, mechanics, and evaluation strategies behind these methods.
+
+Overall, the summer school was a valuable academic experience that deepened my interest in machine learning research while also improving my practical implementation skills. The associated reproductions and visualizations are publicly available in the project repository, which documents my engagement with both the conceptual and experimental components of the program:
+
+\begin{center}
+\url{https://github.com/md-naim-hassan-saykat/summer-school-2025-reproductions}
+\end{center}
+
+% -------------------------------------------------
+% Bibliography
+% -------------------------------------------------
+{\small
+\begin{thebibliography}{9}
+
+\bibitem{merton1995}
+Merton, R. C. (1995).
+A functional perspective of financial intermediation.
+\textit{Financial Management}, 24(2), 23-41.
+\url{https://www.jstor.org/stable/3665532}
+
+\bibitem{ji2021dnabert}
+Ji, Y., Zhou, Z., Liu, H., \& Davuluri, R. V. (2021).
+DNABERT: Pre-trained bidirectional encoder representations from transformers model for DNA-language in genome.
+\textit{Bioinformatics}, 37(15), 2112-2120.
+\url{https://doi.org/10.1093/bioinformatics/btab083}
+
+\bibitem{wang2023agents}
+Wang, L., Ma, C., Feng, X., Zhang, Z., Yang, H., Zhang, J., Chen, Z., Tang, J., Chen, X., Lin, Y., Zhao, W. X., Wei, Z., \& Wen, J.-R. (2023).
+A Survey on Large Language Model Based Autonomous Agents.
+arXiv preprint arXiv:2308.11432.
+\url{https://arxiv.org/abs/2308.11432}
+
+\bibitem{lattimore2020bandit}
+Lattimore, T., \& Szepesvári, C. (2020).
+\textit{Bandit Algorithms}.
+Cambridge University Press.
+\url{https://tor-lattimore.com/downloads/book/book.pdf}
+
+\end{thebibliography}
+}
+
+\end{document}
